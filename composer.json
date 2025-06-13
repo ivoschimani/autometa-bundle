@@ -1,0 +1,36 @@
+{
+    "name": "ivoschimani/autometa-bundle",
+    "type": "contao-bundle",
+    "license": "MIT",
+    "description": "Generates Page Meta Data",
+    "authors": [
+        {
+            "name": "Ivo Schimani",
+            "email": "ivo@schimani.de",
+            "role": "Project leader"
+        }
+    ],
+    "keywords": [
+        "contao",
+        "meta data"
+    ],
+    "require": {
+        "php": "^8.2",
+        "contao/core-bundle": "^5.3"
+    },
+    "require-dev": {
+        "contao/manager-plugin": "^2.0"
+    },
+    "conflict": {
+        "contao/core": "*",
+        "contao/manager-plugin": "<2.0 || >=3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ivo\\AutoMetaBundle\\": "src/"
+        }
+    },
+    "extra": {
+        "contao-manager-plugin": "Ivo\\AutoMetaBundle\\ContaoManager\\Plugin"
+    }
+}
