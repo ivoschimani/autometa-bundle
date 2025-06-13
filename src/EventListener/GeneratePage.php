@@ -24,9 +24,6 @@ class GeneratePage
             if ("" == $objPage->pageTitle) {
                 $htmlHeadBag->setTitle("[[seitentitel]]");
             }
-            if ("" == $GLOBALS['TL_KEYWORDS']) {
-                $GLOBALS['TL_KEYWORDS'] = "[[keywords]]";
-            }
         }
     }
 }
